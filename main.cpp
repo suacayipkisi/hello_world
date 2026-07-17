@@ -34,13 +34,14 @@ std::ostream& operator<<(std::ostream& os, Planets planet){
 
 int main(){
     std::cout << "Hello, world!" << std::endl; //this is the main line
+    std::cout << "\n\n";
     int planetNum{};
     while(true){
         Planets currentPlanet{planetNum};
         if(currentPlanet == unknown){
             break;
         }
-        std::cout << currentPlanet << std::endl;
+        std::cout << "Hello, " << currentPlanet << "!" << std::endl;
         planetNum++ ;
     }
 
