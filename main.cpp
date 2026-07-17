@@ -16,7 +16,6 @@ enum class Planets : int{
 };
 
 std::ostream& operator<<(std::ostream& os, Planets planet){
-    
     switch (planet) {
         case Planets::mercury: return os << "Mercury";
         case Planets::venus: return os << "Venus";
