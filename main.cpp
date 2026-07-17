@@ -11,7 +11,8 @@ enum Planets:int{
     uranus,
     neptune,
     pluto,
-    unknown
+    unknown,
+    error
 };
 
 std::ostream& operator<<(std::ostream& os, Planets planet){
@@ -26,15 +27,16 @@ std::ostream& operator<<(std::ostream& os, Planets planet){
         case uranus: return os << "Uranus";
         case neptune: return os << "Neptune";
         case pluto: return os << "Pluto";
-        default: return os << "Unknown";
+        case unknown: return os << "Unknown";
+        default: return os << "Error!";
     }
-    os << "Unknown";
+    os << "Error!";
     return os;
 }
 
 int main(){
     std::cout << "Hello, world!" << std::endl; //this is the main line
-    std::cout << "\n\n";
+    std::cout << "\n";
     int planetNum{};
     while(true){
         Planets currentPlanet{planetNum};
