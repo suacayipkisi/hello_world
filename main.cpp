@@ -43,6 +43,5 @@ int main(){
         std::cout << "Hello, " << currentPlanet << "!" << std::endl;
         planetNum++ ;
     }
-
     return 0;
 }
