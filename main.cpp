@@ -25,7 +25,7 @@ std::ostream& operator<<(std::ostream& os, Planets planet){
         case Planets::saturn: return os << "Saturn";
         case Planets::uranus: return os << "Uranus";
         case Planets::neptune: return os << "Neptune";
-        case Planets::pluto: return os << "Pluto";
+        case Planets::pluto: return os << "Pluto, you poor boy";
         case Planets::unknown: return os << "Unknown";
         default: return os << "Error!";
     }
